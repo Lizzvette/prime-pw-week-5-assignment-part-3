@@ -7,13 +7,12 @@ function addToCollection (title, artist, yearPublished) {
         title: title,
         artist: artist,
         yearPublished: yearPublished,
-    }// end album
+    };// end album
 
     collection.push(album);
     return album;
 }
-console.log('Added album to array:', )
-    
+console.log('Pushed album to array: & git');
 
 /*While working through the features below, make sure to commit after you complete a task! Your commit message should reflect what you added or changed since the previous commit.
 
@@ -26,11 +25,22 @@ Required Features
 Create a new object having the above properties
  Add the new object to the end of the collection array
 Return the newly created object
- Test the addToCollection function:
+ Test the addToCollection function: */
 
-Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
+console.log(addToCollection('The Fame', 'Lady Gaga', '2008'));
+console.log(addToCollection('Everything is Everything', 'Diana Ross', '1970'));
+console.log(addToCollection('Good Girl Gone Bad', 'Rihanna', '2008'));
+console.log(addToCollection('Any', 'Bruno Mars', '2017'));
+console.log(addToCollection('Sugar', 'Maroon 5', '2014'));
+console.log(addToCollection('Any', 'Imagine Dragons', '2014'));
+
+console.log('Pushed collection to git:', collection);
+
+/*-- Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
 Console.log each album as added using the returned value.
+
 After all are added, console.log the collection array.
+
 Add a function named showCollection. This function should:
 
 Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
